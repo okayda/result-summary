@@ -19,7 +19,7 @@ Users should be able to:
 ### Built with
 
 - HTML5
-- TailWind-CSS
+- Tailwind-CSS
 
 ## Author
 
