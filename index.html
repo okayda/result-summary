@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Hanken+Grotesk:wght@500;700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            serif: ["Hanken Grotesk", "verdana"],
+          },
+
+          screens: {
+            md: "700px",
+          },
+
+          extend: {
+            colors: {
+              light_red: " hsl(0, 100%, 67%)",
+              orange_yellow: "hsl(39, 100%, 56%)",
+              green_teal: "hsl(166, 100%, 37%)",
+              cobalt_blue: "hsl(234, 85%, 45%)",
+
+              light_slate_blue: "hsl(252, 100%, 67%)",
+              light_royal_blue: "hsl(241, 81%, 54%)",
+
+              violet_blue: "hsla(256, 72%, 46%, 1)",
+              persian_blue: "hsla(241, 72%, 46%, 0)",
+
+              pale_blue: "hsl(221, 100%, 96%)",
+              light_lavender: "hsl(241, 100%, 89%)",
+              dark_gray_blue: "hsl(224, 30%, 27%)",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Results summary</title>
+  </head>
+  <body class="md:h-screen md:flex md:flex-col md:justify-center">
+    <main>
+      <section>
+        <div
+          class="max-w-md mx-auto bg-white md:flex md:max-w-[620px] md:border md:border-gray-100 md:shadow-lg md:rounded-3xl overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-b from-light_slate_blue to-light_royal_blue mb-6 pt-6 pb-10 text-center rounded-b-3xl grow md:rounded-3xl md:mb-0"
+          >
+            <h4 class="text-light_lavender font-medium mb-4 md:mb-6 md:text-lg">
+              Your Result
+            </h4>
+
+            <div
+              class="bg-gradient-to-b from-violet_blue to-persian_blue max-w-[124px] p-6 mx-auto rounded-full text-center mb-5 md:max-w-[166px] md:py-10"
+            >
+              <span
+                class="text-5xl text-white mb-1 inline-block font-extrabold md:text-6xl font-serif"
+                >76</span
+              >
+              <div
+                class="text-light_lavender/60 flex justify-center gap-1.5 font-medium"
+              >
+                <span>of</span>
+                <span>100</span>
+              </div>
+            </div>
+
+            <div class="max-w-[286px] mx-auto md:max-w-[220px]">
+              <h3 class="text-white text-2xl font-medium mb-2 md:mb-3">
+                Great
+              </h3>
+              <p class="text-light_lavender">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="max-w-[320px] mx-auto bg-white md:max-w-xl md:mx-0 md:grow md:p-7"
+          >
+            <h4 class="mb-5 font-bold text-lg text-dark_gray_blue/90">
+              Summary
+            </h4>
+
+            <ul class="flex flex-col gap-3 mb-7">
+              <li class="bg-light_red/10 rounded-md flex justify-between p-3">
+                <div class="flex gap-2">
+                  <img src="/assets//images/icon-reaction.svg" alt="" />
+                  <h3 class="font-medium text-light_red">Reaction</h3>
+                </div>
+                <div class="font-bold">
+                  <span class="text-dark_gray_blue/90">80 </span>
+                  <span class="text-dark_gray_blue/40">/ 100</span>
+                </div>
+              </li>
+
+              <li
+                class="bg-orange_yellow/10 rounded-md flex justify-between p-3"
+              >
+                <div class="flex gap-2">
+                  <img src="/assets//images/icon-memory.svg" alt="" />
+                  <h3 class="font-medium text-orange_yellow">Memory</h3>
+                </div>
+                <div class="font-bold">
+                  <span class="text-dark_gray_blue/90">92 </span>
+                  <span class="text-dark_gray_blue/40">/ 100</span>
+                </div>
+              </li>
+
+              <li class="bg-green_teal/10 rounded-md flex justify-between p-3">
+                <div class="flex gap-2">
+                  <img src="/assets//images/icon-verbal.svg" alt="" />
+                  <h3 class="font-medium text-green_teal">Verbal</h3>
+                </div>
+                <div class="font-bold">
+                  <span class="text-dark_gray_blue/90">61 </span>
+                  <span class="text-dark_gray_blue/40">/ 100</span>
+                </div>
+              </li>
+
+              <li class="bg-cobalt_blue/10 rounded-md flex justify-between p-3">
+                <div class="flex gap-2">
+                  <img src="/assets//images/icon-visual.svg" alt="" />
+                  <h3 class="font-medium text-cobalt_blue">Visual</h3>
+                </div>
+                <div class="font-bold">
+                  <span class="text-dark_gray_blue/90">72 </span>
+                  <span class="text-dark_gray_blue/40">/ 100</span>
+                </div>
+              </li>
+            </ul>
+
+            <button
+              class="hover:from-light_slate_blue hover:to-light_royal_blue bg-dark_gray_blue w-full text-white rounded-full py-4 font-medium text-lg md:py-2 md:text-md md:bg-gradient-to-b"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
